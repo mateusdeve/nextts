@@ -4,18 +4,16 @@ import { User } from '../api/User';
 import { GetServerSideProps } from 'next';
 import styled from 'styled-components'
 
-
-
-const Divisor = styled.div`
+export const Divisor = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `
 
-const Title = styled.p`
+export const Title = styled.p`
   font-size: 20px;
-  color: ${({theme}) => theme.colors.primary}
+  color: ${({theme}) => theme.colors.primary};
 `
 
 export interface UsersProps {
