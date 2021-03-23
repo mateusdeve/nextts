@@ -3,6 +3,7 @@ import axios from 'axios'
 import { User } from '../api/User';
 import { GetServerSideProps } from 'next';
 import styled from 'styled-components'
+import Head from 'next/head'
 
 export const Divisor = styled.div`
   display: flex;
@@ -23,9 +24,15 @@ export interface UsersProps {
 function Users({users}: UsersProps){
   return (
     <Divisor>
-      {users && users.map(user => (
-        <Title key={user.id}>{user.name}</Title>
-      ))}
+       <Head>
+        <title>Users</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>
+        {users && users.map(user => (
+          <Title key={user.id}>{user.name}</Title>
+        ))}
+      </div>
     </Divisor>
     )
 }
