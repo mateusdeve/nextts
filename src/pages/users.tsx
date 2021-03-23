@@ -4,9 +4,18 @@ import { User } from '../api/User';
 import { GetServerSideProps } from 'next';
 import styled from 'styled-components'
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
+
+
+const Divisor = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
+const Title = styled.p`
+  font-size: 20px;
+  color: ${({theme}) => theme.colors.primary}
 `
 
 export interface UsersProps {
@@ -15,11 +24,11 @@ export interface UsersProps {
 
 function Users({users}: UsersProps){
   return (
-    <div>
+    <Divisor>
       {users && users.map(user => (
         <Title key={user.id}>{user.name}</Title>
       ))}
-    </div>
+    </Divisor>
     )
 }
 
