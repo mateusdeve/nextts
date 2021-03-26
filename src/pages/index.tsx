@@ -1,19 +1,48 @@
 import Head from 'next/head'
-import styled from 'styled-components'
-import { Divisor, Title } from './users'
 import Link from 'next/link'
+import { GetServerSideProps } from 'next';
+import axios from 'axios'
+import {Container, Content} from './styled'
+import Profile from '../components/Profile'
+import About from '../components/About'
+import { User } from '../types';
 
-export default function Home() {
+export interface UsersProps {
+  user?: User
+}
+
+function Home({user}: UsersProps) {
   return (
     <>
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Divisor>
-        <Title>teste</Title>
-        <Link href="/users"><a>Página de Users</a></Link>
-      </Divisor>
+      <Container>
+        <Content>
+          <Profile user={user} />
+          <About user={user} />
+        </Content>
+      </Container>
     </>
   )
+  
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  try{
+    const response = await axios.get("https://api.github.com/users/mateusdeve")
+    const {data} = response;
+    
+    return{
+      props: {user: data}
+    }
+  }catch(e){
+    console.log("Error");
+    return{
+      props: {user: {}}
+    }
+  }
+}
+
+export default Home;

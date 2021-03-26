@@ -6,12 +6,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
   }
 `
 
 const theme = {
   colors: {
-    primary: '#000',
+    primary: 'rgb(32, 32, 36)',
+    secondary: 'rgb(18, 18, 20)'
   },
 }
 
