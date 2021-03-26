@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { GetServerSideProps } from 'next';
 import axios from 'axios'
-import {Container, Content} from './styled'
+import {Container, Content} from '../components/styled'
 import Profile from '../components/Profile'
 import About from '../components/About'
 import { User } from '../types';

@@ -1,4 +1,4 @@
-import { Card, Avatar, Name, City, Line, IconsGroup, Icon } from './styled'
+import { Card, Avatar, Name, City, Line, IconsGroup } from './styled'
 import { User } from '../../types';
 import Image from 'next/image'
 
