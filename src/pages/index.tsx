@@ -15,9 +15,9 @@ function Home({user}: UsersProps) {
     <>
       <Head>
         <title>Home</title>
+        <meta property="og:image" content='../../public/images/next.jpg'/>
         <meta name="description" content="Página inicial" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content={`${user.avatar_url}`}/>
       </Head>
       <Container>
         <Content>
