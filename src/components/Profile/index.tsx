@@ -1,5 +1,5 @@
 import { Card, Avatar, Name, City, Line, IconsGroup } from './styled'
-import { User } from '../../types';
+import { User } from '../../api/User';
 import Image from 'next/image'
 
 export interface UsersProps {

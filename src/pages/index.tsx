@@ -4,7 +4,7 @@ import axios from 'axios'
 import {Container, Content} from '../components/styled'
 import Profile from '../components/Profile'
 import About from '../components/About'
-import { User } from '../types';
+import { User } from '../api/User';
 
 export interface UsersProps {
   user?: User
@@ -15,7 +15,9 @@ function Home({user}: UsersProps) {
     <>
       <Head>
         <title>Home</title>
+        <meta name="description" content="Página inicial" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content='../../public/images/tss.png'/>
       </Head>
       <Container>
         <Content>
