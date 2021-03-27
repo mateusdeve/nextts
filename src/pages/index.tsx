@@ -15,7 +15,10 @@ function Home({user}: UsersProps) {
     <>
       <Head>
         <title>Home</title>
-        <meta property="og:image" content='../../public/images/next.jpg'/>
+        <meta property="og:url" content="https://nextts-ten.vercel.app/" />
+        <meta property="og:description" content="description of your website/webpage" />
+        <meta property="og:image" content='../../public/images/logo-yoursite.jpg'/>
+        <meta property="og:type" content="article" />
         <meta name="description" content="Página inicial" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
