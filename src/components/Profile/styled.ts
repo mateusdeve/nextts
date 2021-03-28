@@ -12,7 +12,6 @@ export const Card = styled.div`
 
 export const Avatar = styled.img`
   width: 40%;
-  height: 29%;
   border-radius: 100%;
   border: 3px solid #7BF1A8;
   margin-top: 70px;
@@ -34,12 +33,21 @@ export const City = styled.h2`
 export const Line = styled.hr`
   border: 1px solid #7BF1A8;
   width: 90%;
+  margin: 30px 0px;
 `
 
 export const IconsGroup = styled.div`
-
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 `
 
 export const Icon = styled.img`
   width: 20%;
+`
+export const Image = styled.img`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height}
 `

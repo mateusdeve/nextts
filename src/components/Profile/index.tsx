@@ -1,6 +1,5 @@
-import { Card, Avatar, Name, City, Line, IconsGroup } from './styled'
+import { Card, Avatar, Name, City, Line, IconsGroup, Image} from './styled'
 import { User } from '../../api/User';
-import Image from 'next/image'
 
 export interface UsersProps {
   user?: User
@@ -14,12 +13,24 @@ const Profile = ({user}: UsersProps) => {
       <City>{user.location}</City>
       <Line />
       <IconsGroup>
-      <Image
-        src="/images/ts.svg"
-        alt="Picture of the author"
-        width={50}
-        height={50}
-      />
+        <Image
+          src="/images/ts.svg"
+          alt="Picture of the author"
+          width={50}
+          height={50}
+        />
+        <Image
+          src="/images/coracao.png"
+          alt="Picture of the author"
+          width={25}
+          height={25}
+        />
+        <Image
+          src="/images/nextjsLogo.png"
+          alt="Picture of the author"
+          width={50}
+          height={50}
+        />
       </IconsGroup>
     </Card>
   )
