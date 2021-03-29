@@ -14,22 +14,22 @@ const Profile = ({user}: UsersProps) => {
       <Line />
       <IconsGroup>
         <Image
-          src="/images/ts.svg"
+          src="/images/iconTs.svg"
           alt="Picture of the author"
-          width={50}
-          height={50}
+          width={45}
+          height={45}
         />
         <Image
           src="/images/coracao.svg"
           alt="Picture of the author"
-          width={25}
-          height={25}
+          width={20}
+          height={20}
         />
         <Image
-          src="/images/nextjsLogo.svg"
+          src="/images/iconNextjs.svg"
           alt="Picture of the author"
-          width={50}
-          height={50}
+          width={45}
+          height={45}
         />
       </IconsGroup>
     </Card>

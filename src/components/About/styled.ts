@@ -5,6 +5,10 @@ export const Card = styled.div`
   width: 65%;
   border-radius: 10px;
   margin-top: 15%;
+
+  @media(min-width: 1600px) {
+    margin-top: 18%;
+  }
   
   @media(max-width: 600px){
     width: 100%;
