@@ -10,4 +10,7 @@ export const Content = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 150px;
+  @media(max-width: 600px){
+  padding: 0px 50px;
+  }
 `

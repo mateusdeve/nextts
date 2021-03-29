@@ -20,13 +20,13 @@ const Profile = ({user}: UsersProps) => {
           height={50}
         />
         <Image
-          src="/images/coracao.png"
+          src="/images/coracao.svg"
           alt="Picture of the author"
           width={25}
           height={25}
         />
         <Image
-          src="/images/nextjsLogo.png"
+          src="/images/nextjsLogo.svg"
           alt="Picture of the author"
           width={50}
           height={50}

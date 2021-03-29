@@ -8,6 +8,9 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media(max-width: 600px){
+    width: 100%
+  }
 `
 
 export const Avatar = styled.img`
@@ -42,6 +45,10 @@ export const IconsGroup = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+
+  @media(max-width: 600px){
+   width: 55%;
+  }
 `
 
 export const Icon = styled.img`
