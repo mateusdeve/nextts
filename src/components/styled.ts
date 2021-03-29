@@ -11,11 +11,11 @@ export const Content = styled.div`
   justify-content: space-between;
   padding: 0px 150px;
   @media(max-width: 600px){
-  padding: 0px 50px;
+  padding: 0px 40px;
   }
   @media(min-width: 1800px) {
     margin: 0% 0% 8% 0%;
-    padding: 0px 300px;
+    /* padding: 0px 300px; */
   }
 `
 
