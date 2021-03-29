@@ -4,7 +4,7 @@ export const Card = styled.div`
   background: #29292E;
   width: 65%;
   border-radius: 10px;
-  margin-top: 25%;
+  margin-top: 15%;
   
   @media(max-width: 600px){
     width: 100%;
@@ -21,7 +21,7 @@ export const Title = styled.h1`
 export const Paragraph = styled.p`
   color: #fff;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 300;
 `
 
