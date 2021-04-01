@@ -30,11 +30,9 @@ class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-        <Head>
-          <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/nextjs.jpg" />
+          <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
-        </Head>
         </Head>
         <body>
           <Main />
