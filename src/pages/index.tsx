@@ -17,12 +17,6 @@ function Home({user}: UsersProps) {
     <>
       <Head>
         <title>Home</title>
-        <meta property="og:url" content="https://nextts-ten.vercel.app/" />
-        <meta property="og:description" content="Home" />
-        <meta property="og:image" content='../../public/logo192.png'/>
-        <meta property="og:type" content="article" />
-        <meta name="description" content="Página inicial" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
         <Content>
